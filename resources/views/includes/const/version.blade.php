@@ -1,0 +1,1 @@
+<span id="version"><b>version</b> {{ env('APP_VERSION', '0.0.1') }}</span>

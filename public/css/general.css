@@ -1,0 +1,288 @@
+/*
+|-----------------------------------------------
+| @General
+|-----------------------------------------------
+*/
+.log-container {
+	height: 250px;
+	background: #f5f5f5;
+    border: 1px solid #ececec;
+	
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+
+	overflow-y: auto;
+}
+
+.log-container .log-container-b {
+    margin: 10px;
+}
+
+.log-container .log-container-b p {
+    margin-bottom: 3px;
+    color: #737373;
+}
+
+pre {
+    font-family: inherit;
+    font-size: inherit;	
+	padding: 0;
+	background: none;
+	border: none;
+	
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+}
+
+.first-ch-only > * {
+	display: none;
+}
+
+.first-ch-only > *:first-child {
+	display: inherit;
+}
+
+
+
+/*
+|-----------------------------------------------
+| @Color
+|-----------------------------------------------
+*/
+.darkgray {
+	color: darkgray;
+}
+
+
+
+/*
+|-----------------------------------------------
+| @Request Tracking
+|-----------------------------------------------
+*/
+#request-track {}
+
+#request-track .request-track-header {}
+
+.request-track-header input {
+    font-size: 15px;
+    background: transparent;
+    
+    border: none;
+    border-bottom: 3px solid darkgray;
+}
+
+
+/*
+|-----------------------------------------------
+| @Inputs
+|-----------------------------------------------
+*/
+.read-only {
+	background-color: white !important;
+}
+
+
+/*
+|-----------------------------------------------
+| @Table
+|-----------------------------------------------
+*/
+.daterange-content {}
+
+.daterange-content .date-section {
+    margin-bottom: 5px;   
+}
+
+.daterange-content .date-section p {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+
+/*
+|-----------------------------------------------
+| @Benefits Searching
+|-----------------------------------------------
+*/
+#benefits-searching {
+	background: transparent;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+#benefits-searching .benefits-content {
+	border: none;
+}
+
+.benefits-content .benefits-header {
+	position: relative;
+}
+
+.benefits-content .benefits-header h1 {
+	margin: 0;
+}
+
+.benefits-header .benefits-search {
+	position: relative;
+}
+
+.benefits-header .benefits-search .overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.benefits-header .benefits-search .overlay > i{
+    font-size: 25px;
+}
+
+.benefits-header .benefits-search input {
+    font-size: 23px;
+    margin-top: 10px;
+    background: transparent;
+    
+    border: none;
+    border-bottom: 3px solid darkgray;
+}
+
+.benefits-content .benefits-header input:focus {
+    border-bottom: 3px solid #3c8dbc;
+}
+
+.benefits-content .benefits-result {
+    max-height: 500px;
+    margin-top: 10px;
+    overflow: auto;
+    background: #fff;
+    
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+}
+
+
+/*
+|-----------------------------------------------
+| @Table
+|-----------------------------------------------
+*/
+table .view-more {
+	max-width: 250px;
+}
+
+
+/*
+|-----------------------------------------------
+| @Lockscreen
+|-----------------------------------------------
+*/
+.lockscreen-wrapper {
+    display: table;
+    height: 100vh;
+    margin: auto;
+}
+
+.lockscreen-border {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+/*
+|-----------------------------------------------
+| @Error
+|-----------------------------------------------
+*/
+.error-page {
+	display: table;
+	height: 50vh;
+}
+
+.error-page .error-page-border {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+/*
+|-----------------------------------------------
+| @Chosen
+|-----------------------------------------------
+*/
+.chosen-container.chosen-container-single {
+    width: 320px !important;
+}
+
+
+/*
+|-----------------------------------------------
+| @Vue
+|-----------------------------------------------
+*/
+.notif {
+	display: inline-block;
+    padding: 5px 5px;
+    min-width: 20px;
+	
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+
+
+/*
+|-----------------------------------------------
+| @VUE: Field.vue
+|-----------------------------------------------
+*/
+.formtemplate-field {}
+
+.formtemplate-field textarea {
+	min-height: 75px !important;
+}
+
+
+/*
+| @Vue: Transition
+|-----------------------------------------------
+*/
+.fade-enter-active, 
+.fade-leave-active {
+	-webkit-transition: opacity .5s;
+	   -moz-transition: opacity .5s;
+	    -ms-transition: opacity .5s;
+	     -o-transition: opacity .5s;
+	        transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+	opacity: 0;
+}
+
+.up-enter-active, 
+.up-leave-active {
+	-webkit-transition: opacity .5s, transform .3s ease-in-out;
+	   -moz-transition: opacity .5s, transform .3s ease-in-out;
+	    -ms-transition: opacity .5s, transform .3s ease-in-out;
+	     -o-transition: opacity .5s, transform .3s ease-in-out;
+	        transition: opacity .5s, transform .3s ease-in-out;
+}
+
+.up-leave-active {
+	-webkit-transform: translateY(-20%);
+	   -moz-transform: translateY(-20%);
+	    -ms-transform: translateY(-20%);
+	     -o-transform: translateY(-20%);
+	        transform: translateY(-20%);		
+}
+
+.up-enter-active {
+	-webkit-transform: translateY(0%);
+	   -moz-transform: translateY(0%);
+	    -ms-transform: translateY(0%);
+	     -o-transform: translateY(0%);
+	        transform: translateY(0%);	
+}
+
+.up-enter, .up-leave-to {
+	opacity: 0;
+}

@@ -1,0 +1,1 @@
+Copyright &copy; {{ date('Y') }} <a href="#">SN Aboitiz Power Group</a>. All rights reserved.

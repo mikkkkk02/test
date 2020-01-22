@@ -1,0 +1,17 @@
+# Refreshing of all model searchables
+
+php artisan scout:import "App\User";
+
+php artisan scout:import "App\Company";
+php artisan scout:import "App\Group";
+php artisan scout:import "App\Department";
+php artisan scout:import "App\Team";
+
+php artisan scout:import "App\Event";
+php artisan scout:import "App\EventParticipant";
+
+php artisan scout:import "App\Form";
+
+php artisan scout:import "App\GovernmentForm";
+
+php artisan scout:import "App\Ticket";
