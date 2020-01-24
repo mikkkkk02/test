@@ -1257,12 +1257,20 @@ class Form extends Model
             if ($returnForm) {
                 return $form;
             }
+            $msg = 'Successfully submitted form ';
+            $message = $msg . $form->template->name;
+
+            if ($request->has('draft')){
+                $msg = ' has been successfully saved as draft.';
+                $message = $form->template->name . $msg;
+            }
+            
 
             return [
                 'response' => 1,
                 'redirectURL' => $redirectURL,
                 'title' => 'New Request',
-                'message' => 'Successfully submitted form ' . $form->template->name,
+                'message' => $message,
                 'form' => $form,
             ];
         }
